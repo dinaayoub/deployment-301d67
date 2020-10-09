@@ -8,7 +8,7 @@ const express = require('express');
 const app = express();
 
 //the port to accept traffic on
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //use this, dont worry about what it does yet. 
 app.use(express.static('./public'));
